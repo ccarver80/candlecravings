@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backdropBrightness: {
+        40: '.40',
+        175: '1.75',
+      },
       backgroundImage: {
         candle:
           "url('../public/imgs/candleBackgroundSM.jpg')",

@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="grid grid-cols-3 h-20 w-full">
-      <div className="flex">
-        <h1 className="ml-20 my-auto text-2xl">Candle Cravings</h1>
+    <div className="grid relative backdrop-brightness-40 z-10 text-black grid-cols-2 h-20">
+      <div className=" text-white flex">
+        <h1 className="ml-20 my-auto text-4xl p-2 ">Candle Cravings</h1>
       </div>
-      <div className="flex"></div>
-      <div className="flex">
+
+      <div className=" text-white flex">
         <Link
           href="/"
           className="hover:text-blue-400 hover:underline ml-20 my-auto text-2xl"
