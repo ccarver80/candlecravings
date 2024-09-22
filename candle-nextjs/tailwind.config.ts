@@ -1,3 +1,4 @@
+import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backdropBrightness: {
+        40: '.40',
+        175: '1.75',
+      },
       backgroundImage: {
         candle:
           "url('../public/imgs/candleBackgroundSM.jpg')",
@@ -18,6 +23,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };
 export default config;
