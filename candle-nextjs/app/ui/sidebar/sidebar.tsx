@@ -1,8 +1,9 @@
+import Link from "next/link";
+
 export default function Sidebar() {
   return (
     <>
       {/* <div className="flex flex-col items-center w-16 pb-4 overflow-auto border-r border-gray-300">
-       
         <a
           className="flex items-center justify-center flex-shrink-0 w-10 h-10 mt-4 rounded hover:bg-gray-300"
           href="#"
@@ -119,30 +120,30 @@ export default function Sidebar() {
           </div>
 
           <div className="absolute z-10 flex-col items-start hidden w-full pb-1 bg-white shadow-lg group-focus:flex">
-            <a
+            <Link
               className="w-full px-4 py-2 text-left hover:bg-gray-300"
               href="#"
             >
               Menu Item 1
-            </a>
-            <a
+            </Link>
+            <Link
               className="w-full px-4 py-2 text-left hover:bg-gray-300"
               href="#"
             >
               Menu Item 1
-            </a>
-            <a
+            </Link>
+            <Link
               className="w-full px-4 py-2 text-left hover:bg-gray-300"
               href="#"
             >
               Menu Item 1
-            </a>
+            </Link>
           </div>
         </button>
-        <div className="flex flex-col flex-grow p-4 overflow-auto">
-          <a
-            className="flex items-center flex-shrink-0 h-10 px-2 gap-4 mx-auto my-auto text-2xl font-medium rounded hover:bg-gray-300"
-            href="#"
+        <div className="flex flex-col gap-y-10 mt-10 flex-grow p-4 overflow-auto">
+          <Link
+            className="flex items-center flex-shrink-0 h-10 px-2 gap-4 text-2xl font-medium rounded hover:bg-gray-300"
+            href="/dashboard"
           >
             <svg
               className="w-10 h-10"
@@ -160,7 +161,51 @@ export default function Sidebar() {
             </svg>
 
             <span className="leading-none">Dashboard</span>
-          </a>
+          </Link>
+
+          <Link
+            className="flex items-center flex-shrink-0 h-10 px-2 gap-4 text-2xl font-medium rounded hover:bg-gray-300"
+            href="/dashboard/sales"
+          >
+            <svg
+              className="w-10 h-10"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+              />
+            </svg>
+
+            <span className="leading-none">Sales</span>
+          </Link>
+
+          <Link
+            className="flex items-center flex-shrink-0 h-10 px-2 gap-4 text-2xl font-medium rounded hover:bg-gray-300"
+            href="/dashboard/testing"
+          >
+            <svg
+              className="w-10 h-10"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+
+            <span className="leading-none">Testing</span>
+          </Link>
         </div>
       </div>
     </>

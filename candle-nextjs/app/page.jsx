@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Header from "./ui/header/header";
 import candleImg from "../public/imgs/candle.jpg";
@@ -5,7 +7,7 @@ import candleImg from "../public/imgs/candle.jpg";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col">
+      <div className="flex flex-col w-fit">
         <div className="relative">
           {" "}
           <Header />
@@ -32,6 +34,8 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+       
         <div className="mx-auto mt-10 border p-10 gap-3 flex flex-col">
           <h2 className="font-bold text-2xl">Updates:</h2>
 
