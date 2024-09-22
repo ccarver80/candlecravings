@@ -1,26 +1,12 @@
-"use client"
-
-import Image from "next/image";
 import Header from "./ui/header/header";
-import candleImg from "../public/imgs/candle.jpg";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col w-fit">
+      <div className="flex flex-col">
         <div className="relative">
-          {" "}
           <Header />
-          <div className=" -z-10">
-            <Image
-              priority
-              src={candleImg}
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-              alt="candle background"
-            />
-          </div>
+          
           <div className=" relative backdrop-brightness-40 font-bold h-80 text-white flex flex-col items-center">
             <h1 className="mx-auto mt-20 text-4xl">Candle Cravings</h1>
             <h2 className="mx-auto mt-5 text-2xl">"Crave The Glow!"</h2>
